@@ -5,28 +5,50 @@
         <title>Group Spotify Playlists</title>
         <link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico">
         
-        <style>
+        <style id="musicStyles">
             .container {
-                width: auto;
-                height: auto;
-
+                width:100%;
+                padding-bottom: 50px;
                 display: flex;
-                position: static;
+                justify-content: space-around;
             }
 
             .child {
-                width: 480px;
-                height: 380px;
-                /* background-color: red; */
+                width: auto;
+                height: auto;
+                /* justify-content: space-evenly; */
             }
+        </style>
 
+        <style id="titleStyles">
+            .titleText {
+                text-align: center;
+                font-family: 'Courier New';
+                /* font-size: 150px; */
+                text-decoration: underline violet;
+            }
+        </style>
+
+        <style id="demonSlayer">
+            .ostrom {
+                height: 780px;
+                display: flex;
+                justify-content: center;
+                /* width:fit-content; */
+            }
+            .demon {
+
+            }
+            .demonSlayer {
+
+            }
         </style>
     </head>
     
     <body style="background-color: blueviolet;">
 
-        <div id="title">
-            <h1 style="text-align: center; font-family: 'Courier New';">Check out our favorite Spotify Playlists</h1>
+        <div class="titleDiv">
+            <h1 class="titleText">Check out our favorite Spotify Playlists</h1>
         </div>
 
         <div class="container">
@@ -48,6 +70,11 @@
             <div class="child" >
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1oyNP45mBL6MS3svrxFEnJ?utm_source=generator" width="auto" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
+        </div>
+
+        <div class="ostrom">
+            <img src="./images/DemonSlayer.jpeg" style="transform:scaleX(-1);">
+            <img src="./images/demonStare.jpeg">
         </div>
     </body>
 </html>
