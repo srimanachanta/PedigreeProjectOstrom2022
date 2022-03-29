@@ -25,6 +25,13 @@
                 height:100vh;
                 margin: 0;
             }
+            .container {
+                width:100%;
+                padding-bottom: 50px;
+                display: flex;
+                justify-content: center;
+                height: fit-content;
+            }
         </style>
 
     </head>
@@ -32,13 +39,17 @@
     <body style="background-color:white">
         
         <div id="titleHeader" class="mainPedigreeHeader">
-            <h2 class="center" style="text-decoration: underline violet; font-weight: bold;">Scroll to Learn for about the Hillbilly & Snootington Familes!</h2>
+            <h2 class="center" style="text-decoration: underline violet; font-weight: bold;">Scroll to Learn more about the Hillbilly & Snootington Familes!</h2>
         </div>
 
         <hr>
 
-        <div style="height: 100vh;" id="preceding">
-            <h4>Madison's mom is gay</h4>
+        <div class="center" id="preceding">
+            <h1 style="font-family: 'Courier New'; text-decoration: underline violet;">Their Story</h4>   
+        </div>
+
+        <div class="container" id="storyContainer">
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vTv1XG6Ps5G-Id9BK9zVGQfDaqqo_T3UyD8VXOy4F5g0Sw0WQxKjQGviphxVlkswIQbAA540H-2I3IH/pub?embedded=true" width="800" height="800" ></iframe>
         </div>
 
         <script>
@@ -51,6 +62,12 @@
                     opacity: opacity
                 })
             });
+        </script>
+
+        <script>
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
         </script>
         
     </body>
