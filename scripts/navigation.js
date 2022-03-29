@@ -10,7 +10,7 @@ function navigatePage(location) {
             window.location.href="./spotify.html"
             break;
         case 'aboutPage':
-            window.location.href="./about.html"
+            window.location.href="./about/about.html"
 
     }
 }

@@ -1,0 +1,14 @@
+footer {
+    border-top: 1px dashed black;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+hr {
+    border-top: dashed;
+}
+
+body {
+    background-color: #fcfca5;
+}
