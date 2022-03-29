@@ -35,7 +35,8 @@
             <h4 class="center">scroll lol</h4>
         </div>
 
-        
+        <hr>
+
         <div style="height: 100vh;" id="preceding">
             <h4>Madison's mom is gay</h4>
         </div>
@@ -44,9 +45,10 @@
             $(window).scroll(function() {
                 var scroll = $(window).scrollTop();
                 var nextElement = document.getElementById("preceding");
+                var opacity = ((nextElement.offsetTop)-(window.scrollY))/(nextElement.offsetTop)
                 $(".mainPedigreeHeader").css({
                     width: (100 + scroll/5) + "%",
-                    opacity: ((nextElement.offsetTop)-(window.scrollY))/(nextElement.offsetTop)
+                    opacity: opacity
                 })
             });
         </script>

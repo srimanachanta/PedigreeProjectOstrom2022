@@ -13,13 +13,17 @@
             margin: auto;
             width: fit-content
             }
+            .footer {
+                background-color: gray;
+                width: 100%
+            }
         </style>
     </head>
 
     <body style="background-color:white; height: fit-content;">
 
         <div class="center" id="introDIV">
-            <h1><u>Welcome to the Sriman and Maddison Pedigree Project!</u></h1>
+            <h1 style="text-decoration: underline violet; font-weight: bold;">Hemophilia A</h1>
         </div>
 
         <div class="center" id="pedigreeDIV">
@@ -29,11 +33,13 @@
 
         <div id="Navigate Buttons" class="center" id="navDiv">
             <button class="float-left submit-button" onclick="navigatePage('pedigreePage')" >Go to Pedigree Breakdown</button>
+            <button class="float-left submit-button" onclick="navigatePage('aboutPage')" >Find out about the Disease</button>
+
         </div>
 
         <button onclick="playAudio()">dont click ft. my dad</button>
 
-        <footer style="background-color: gray; width:100%;>
+        <footer class="footer">
             <p> Website Author: <a href="mailto:hcps-achantass@henricostudents.org">Sriman Achanta</a> - <a href="https://github.com/srimanachanta">Github</a> </p>
             <p> Work doer: <a href="mailto:hcps-mussattmg@henricostudents.org"> Maddison (with two d's) Mussatt</a>  </p>
 

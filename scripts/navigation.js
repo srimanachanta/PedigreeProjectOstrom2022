@@ -1,7 +1,7 @@
 function navigatePage(location) {
     switch(location) {
         case 'mainPage':
-            window.location.href="./home.html"
+            window.location.href="./index.html"
             break;
         case 'pedigreePage':
             window.location.href="./pedigrees.html"
@@ -9,8 +9,8 @@ function navigatePage(location) {
         case 'spotifyPage':
             window.location.href="./spotify.html"
             break;
-        default:
-            alert("Not Found")
+        case 'aboutPage':
+            window.location.href="./about.html"
 
     }
 }
