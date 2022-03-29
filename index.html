@@ -17,33 +17,35 @@
                 background-color: gray;
                 width: 100%
             }
+            /* .background {
+                background-image: url('./images/backgrounds/blood_128x128.png');
+                background-repeat: repeat;
+            } */
         </style>
     </head>
 
-    <body style="background-color:white; height: fit-content;">
+    <body class="background">
 
         <div class="center" id="introDIV">
             <h1 style="text-decoration: underline violet; font-weight: bold;">Hemophilia A</h1>
         </div>
 
         <div class="center" style="padding-bottom: 50px" id="pedigreeDIV">
-            <img src="./images/PEDIGREE_DONE.png" alt="Pedigree" style="height:500px;">
+            <img src="./images/example.jpg" alt="Pedigree" style="height:500px;">
         </div>
 
-        <div id="Navigate Buttons" class="center" id="navDiv">
+        <div id="Navigate Buttons" class="center" style="padding-bottom: 20px;">
             <button class="float-left submit-button" onclick="navigatePage('pedigreePage')" >Go to Pedigree Breakdown</button>
             <button class="float-left submit-button" onclick="navigatePage('aboutPage')" >Find out more about the Disease</button>
 
         </div>
-
-        <button onclick="playAudio()">dont click ft. my dad</button>
 
         <footer class="footer">
             <p> Website Author: <a href="mailto:hcps-achantass@henricostudents.org">Sriman Achanta</a> - <a href="https://github.com/srimanachanta">Github</a> </p>
             <p> Work doer: <a href="mailto:hcps-mussattmg@henricostudents.org"> Maddison (with two d's) Mussatt</a>  </p>
 
             <button class="float-left submit-button" onclick="navigatePage('spotifyPage')" >Check out our Music</button>
-
+            <button onclick="playAudio()">dont click ft. my dad</button>
         </footer>
     </body>
 </html>
