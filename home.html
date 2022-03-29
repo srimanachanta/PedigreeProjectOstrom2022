@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico">
+        
+        <script type = "text/javascript" src="scripts/navigation.js"></script> 
+        <script type = "text/javascript" src="scripts/audio.js"></script> 
+
+        <style>
+            .center {
+            margin: auto;
+            width: fit-content
+            }
+        </style>
+    </head>
+
+    <body style="background-color:white">
+
+        <div class="center" id="introDIV">
+            <h1><u>Welcome to the Sriman and Maddison Pedigree Project!</u></h1>
+        </div>
+
+        <div class="center" id="pedigreeDIV">
+            <h2 style="text-align: center;">The Hillbilly and Snootington Familes!</h1>
+            <img src="./images/PEDIGREE_DONE.png" alt="Pedigree" style="height:500px;">
+        </div>
+
+        <div id="Navigate Buttons" class="center" id="navDiv">
+            <button class="float-left submit-button" onclick="navigatePage('pedigreePage')" >Go to Pedigree Breakdown</button>
+        </div>
+
+        <button onclick="playAudio()">dont click ft. my dad</button>
+
+        <footer style="background-color: gray; width:100%; border-style: groove;">
+            <p> Website Author: <a href="mailto:hcps-achantass@henricostudents.org">Sriman Achanta</a> - <a href="https://github.com/srimanachanta">Github</a> </p>
+            <p> Work doer: <a href="mailto:hcps-mussattmg@henricostudents.org"> Maddison (with two d's) Mussatt</a>  </p>
+
+            <button class="float-left submit-button" onclick="navigatePage('spotifyPage')" >Check out our Music</button>
+
+        </footer>
+    </body>
+</html>

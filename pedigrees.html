@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Pedigree Viewer Page</title>
+        <link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico">
+
+        <script type = "text/javascript" src="scripts/scrollListener.js"></script>  
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .hidden{
+            display: none;
+            }
+            .center {
+                margin: auto;
+                width: fit-content
+            }
+            .mainPedigreeHeader {
+                background: url("./images/PEDIGREE_DONE.png");
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                /* background-position: center; */
+                width: 100%;
+                height:100vh;
+                margin: 0;
+            }
+        </style>
+
+    </head>
+    
+    <body style="background-color:white">
+        
+        <div id="titleHeader" class="mainPedigreeHeader">
+            <h4 class="center">scroll lol</h4>
+        </div>
+
+        
+        <div style="height: 100vh;" id="preceding">
+            <h4>Madison's mom is gay</h4>
+        </div>
+
+        <script>
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                var nextElement = document.getElementById("preceding");
+                $(".mainPedigreeHeader").css({
+                    width: (100 + scroll/5) + "%",
+                    opacity: ((nextElement.offsetTop)-(window.scrollY))/(nextElement.offsetTop)
+                })
+            });
+        </script>
+        
+    </body>
+</html>
