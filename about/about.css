@@ -6,9 +6,13 @@ footer {
 }
 
 hr {
-    border-top: dashed;
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
 }
 
 body {
-    background-color: #fcfca5;
+    background-color: #CCCCFF;
 }
